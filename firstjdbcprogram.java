@@ -1,9 +1,9 @@
 import java.sql.*;
 public class firstjdbcprogram {
         public static void main(String[] args) throws Exception {
-            String url="jdbc:mysql://localhost:3306/student";
-          String username="root";
-           String password="123456";
+            String url="jdbc:mysql://localhost:3306/student"; // database url
+          String username="root"; // add user name
+           String password="75812"; // add password
           String query="select * from student";
 
           Connection conn= DriverManager.getConnection(url,username,password);
@@ -24,4 +24,5 @@ ResultSet rs=st.executeQuery(query);
             System.out.println("Connection Closed....");
         }
     }
+
 
